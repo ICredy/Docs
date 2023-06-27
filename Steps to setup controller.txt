@@ -47,7 +47,7 @@ Github link: https://github.com/hyperledger/aries-acapy-controllers/tree/main/Al
 
 	Visit: localhost:4200
 
-7. Acme Controller
+7. ACME Controller
 	cd ~/aries-acapy-controllers/AliceFaberAcmeDemo/controllers/acme-controller
 	npm install
 	npm start
