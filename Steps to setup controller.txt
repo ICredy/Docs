@@ -1,0 +1,55 @@
+Github link: https://github.com/hyperledger/aries-acapy-controllers/tree/main/AliceFaberAcmeDemo
+
+1. Von Network:
+	cd von-network
+	./manage build
+	./manage start --logs
+	
+	visit: localhost:9000
+
+
+2. Faber Agent
+	cd ~/aries-cloudagent-python/demo
+	./run_demo faber
+
+	In case of error: docker rm -f faber
+
+
+3. Alice Agent
+	cd ~/aries-cloudagent-python/demo
+	./run_demo alice
+
+	In case of error: docker rm -f alice
+
+4. ACME Agent
+	cd ~/aries-cloudagent-python/demo
+	./run_demo acme
+
+	In case of error: docker rm -f acme
+
+
+5. Faber Controller
+	(Prerequisite: Dotnet needs to be installed)
+
+	cd ~/aries-acapy-controllers/AliceFaberAcmeDemo/controllers/faber-controller
+	dotnet run -p FaberController
+	
+	Visit: localhost:5000
+
+
+6. Alice Controller
+	(Prerequisite: Node.js needs to be installed)
+
+	npm install -g @angular/cli	
+	cd ~/aries-acapy-controllers/AliceFaberAcmeDemo/controllers/alice-controller
+	npm install OR npm install --force
+	ng serve
+
+	Visit: localhost:4200
+
+7. Acme Controller
+	cd ~/aries-acapy-controllers/AliceFaberAcmeDemo/controllers/acme-controller
+	npm install
+	npm start
+
+	Visit: localhost:3000
