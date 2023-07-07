@@ -1,5 +1,8 @@
 Github link: https://github.com/hyperledger/aries-acapy-controllers/tree/main/AliceFaberAcmeDemo
 
+git clone https://github.com/hyperledger/aries-cloudagent-python.git
+git clone https://github.com/hyperledger/aries-acapy-controllers.git
+
 1. Von Network:
 	cd von-network
 	./manage build
@@ -12,24 +15,19 @@ Github link: https://github.com/hyperledger/aries-acapy-controllers/tree/main/Al
 	cd ~/aries-cloudagent-python/demo
 	./run_demo faber
 
-	In case of error: docker rm -f faber
-
 
 3. Alice Agent
 	cd ~/aries-cloudagent-python/demo
 	./run_demo alice
 
-	In case of error: docker rm -f alice
 
 4. ACME Agent
 	cd ~/aries-cloudagent-python/demo
 	./run_demo acme
 
-	In case of error: docker rm -f acme
-
 
 5. Faber Controller
-	(Prerequisite: Dotnet needs to be installed)
+	(Prerequisite: Dotnet 3.1 needs to be installed)
 
 	cd ~/aries-acapy-controllers/AliceFaberAcmeDemo/controllers/faber-controller
 	dotnet run -p FaberController
