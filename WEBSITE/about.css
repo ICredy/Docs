@@ -1,0 +1,55 @@
+body {
+  background-color: #F0F0F0;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content.about-page {
+  text-align: left;
+  background-color: #F0F0F0;
+  padding: 4%;
+}
+
+.about-page h2 {
+  color: #000066;
+  font-size: 1.6em; /* Adjust font size for h2 to scale with container */
+  font-weight: bold;
+  margin-bottom: 1em; /* Adjust margin to scale with container */
+  margin-top: 1.8em;
+  font-family: "Helvetica", sans-serif;
+  text-align: center;
+}
+
+.about-page i {
+  margin-right: 3px; /* Reduce margin to save space */
+}
+
+.about-page p {
+  font-size: 1.2em; /* Adjust font size for paragraphs to scale with container */
+  font-family: "Calibri", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 1em; /* Adjust margin to scale with container */
+  color: #333333;
+}
+
+/* Media Query for Mobile View */
+@media screen and (max-width: 768px) {
+  .content.about-page {
+    padding: 20px; /* Reduce padding for mobile view */
+  }
+
+  .about-page h2 {
+    font-size: 1.5em; /* Adjust font size for h2 in mobile view */
+  }
+
+  .about-page p {
+    font-size: 1em; /* Adjust font size for paragraphs in mobile view */
+  }
+}

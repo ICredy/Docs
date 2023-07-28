@@ -1,0 +1,461 @@
+body {
+  background-color: #F0F0F0;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
+/* Links */
+a {
+  color: #000099;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000066;
+}
+
+
+
+/* Hero section styles */
+#hero {
+  background-color: #ffffff;
+}
+
+.hero-images {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hero-image.active {
+  opacity: 1;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-left: -20px;
+  color: #000066;
+}
+
+.hero-content h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #000066;
+  margin-left: -20px;
+}
+
+/* Introduction section styles */
+/* Introduction section styles */
+#introduction {
+  background-color: #ffffff;
+  padding: 20px; /* Adjust the padding to create some space between the container and content */
+  overflow: hidden;
+}
+
+#introduction .container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0; /* Remove the padding on the container */
+}
+
+#introduction h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 20px; /* Increase the margin to add some space below the heading */
+  font-family: "Helvetica", sans-serif;
+}
+
+#introduction p {
+  font-size: 1.2em; /* Reduce the font size to fit the content within the container */
+  font-family: "Calibri", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 20px; /* Increase the margin to add some space below the paragraphs */
+  color: #333333;
+}
+
+
+/* Benefits section styles */
+#benefits {
+  background-color: #f2f2f2;
+  padding: 30px 70px;
+}
+
+#benefits-heading {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  font-family: "Helvetica", sans-serif;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: center;
+}
+
+.benefit {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.benefit i {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.benefit h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.benefit p {
+  font-size: 1.2em;
+  font-family: "Calibri", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+/* Service section styles */
+#services {
+  background-color: #ffffff;
+  padding: 20px; /* Adjust the padding to create some space between the container and content */
+  
+}
+
+#services .container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0; /* Remove the padding on the container */
+}
+
+#services h2 {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  margin-top: 30px;
+  font-family: "Helvetica", sans-serif;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.service i {
+   font-size: 40px;
+  margin-right: 40px;
+  color: #000000;
+}
+
+.service h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.service p {
+  font-size: 1.2em;
+  font-family: "Calibri", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Resources section styles */
+#resources {
+  background-color: #f2f2f2;
+  padding: 50px 20px;
+}
+
+#resources h2 {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  font-family: "Helvetica", sans-serif;
+}
+
+.article-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.article {
+  background-color: #e0e0e0;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.article h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.excerpt {
+  margin-bottom: 15px;
+}
+
+.read-more {
+  color: #000099;
+  text-decoration: none;
+}
+
+.read-more span {
+  margin-left: 5px;
+}
+
+.read-more:hover {
+  color: #000066;
+}
+
+.article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Join team styles */
+.join-team-section {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.join-team-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.join-team-info {
+  flex: 1;
+  margin-right: 180px;
+}
+
+.join-team-info h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.7em;
+  font-family: "Helvetica", sans-serif;
+}
+
+#team-description {
+  font-size: 1.3em;
+  font-family: "Calibri", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  color: #333333;
+}
+
+.join-team-image {
+  margin-top: 0px;
+  margin-right: 90px;
+}
+
+.join-team-image img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000099;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+
+
+
+
+/* Mobile view styles */
+@media screen and (max-width: 768px) {
+.hero-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: -45px;
+    margin-left: 0;
+  }
+
+  .hero-content h2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    white-space: normal;
+  }
+
+
+  .benefits-list,
+  .service,
+  .article-list,
+  .join-team-content {
+    display: block;
+  }
+  
+  .benefits-list {
+        display: grid;
+        grid-template-columns: 1fr; /* Display benefits in a single column */
+        gap: 20px; /* Add some space between benefits */
+        margin-left:-30px ;
+    }
+
+    .benefit {
+        max-width: 100%; /* Remove the maximum width restriction */
+        width: 100%; /* Set the width to 100% to span the entire container */
+    }
+
+  .join-team-info,
+  .join-team-image {
+    margin-right: 0;
+  }
+  
+    .service {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: -20px;
+  }
+
+  .service i {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #introduction h2 {
+    font-size: 20px; /* Adjust the font size for mobile view */
+    margin-bottom: 15px; /* Adjust the margin for better spacing */
+  }
+
+  #introduction p {
+    font-size: 16px; /* Adjust the font size for mobile view */
+    margin-bottom: 25px; /* Adjust the margin for better spacing */
+    margin-top: 10px; /* Adjust the margin for better spacing */
+  }
+
+  #introduction .container {
+    padding: 0 10px; /* Reduce container padding on small screens */
+  }
+
+  .hero-images {
+    max-height: 300px; /* Reduce hero image height on small screens */
+  }
+
+  .hyperledger-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hyperledger-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hyperledger-info {
+    margin: 20px 0;
+  }
+  
+ 
+
+    .join-team-section {
+    padding: 20px;
+  }
+
+  .join-team-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .join-team-image img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: -35px;
+    margin-bottom: -20px;
+  }
+
+  .join-team-info {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .join-team-info h2 {
+    font-size: 24px;
+  }
+
+  #team-description {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    font-size: 15px;
+    padding: 8px 13px;
+  }
+}
+
+
+
+
+

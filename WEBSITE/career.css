@@ -1,0 +1,119 @@
+body {
+  background-color: #F0F0F0;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content.career-page {
+  text-align: left;
+  background-color: #F0F0F0;
+  padding: 4%;
+}
+
+.content.career-page h1 {
+  font-size: 2em;
+  font-family: "Georgia", serif;
+  color: #000066;
+  margin-bottom: -0.7em; /* Reduce the bottom margin to reduce space below h1 */
+   text-align: center;
+}
+
+section {
+  background-color: #D0D0D0;
+  padding: 2%;
+  text-align: center;
+  margin-bottom: 2%; /* Add some space between sections */
+}
+
+section h2 {
+  color: #000066;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  font-family: "Helvetica", sans-serif;
+   text-align: center;
+}
+
+section p {
+  font-size: 1.2em;
+  font-family: "Calibri", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  color: #333333;
+   text-align: left;
+}
+
+section ul {
+  list-style: disc;
+  text-align: left;
+  margin-left: 4%;
+  margin-bottom: 1em;
+  color: #333333;
+}
+
+section ul li {
+  font-size: 1.2em;
+  font-family: "Calibri", sans-serif;
+  line-height: 1.5;
+}
+
+section img.img14 {
+  width: 15%; /* Adjust the image size based on the container's width */
+  height: auto;
+  margin-bottom: 1em;
+}
+
+section#introduction {
+  background-color: #D0D0D0;
+}
+
+section#why-join-us {
+  background-color: #f2f2f2;
+}
+
+section#diversity-inclusion {
+  background-color: #D0D0D0;
+}
+
+section#benefits {
+  background-color: #f2f2f2;
+}
+
+section#how-to-apply {
+  background-color: #D0D0D0;
+}
+
+section#ideal-candidates {
+  background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 768px) {
+  .content.career-page h1 {
+    font-size: 1.8em; /* Reduce the font size for h1 in mobile view */
+    margin-bottom: 0.5em; /* Also reduce the bottom margin in mobile view */
+  }
+
+  section h2 {
+    font-size: 1.4em; /* Reduce the font size for h2 in mobile view */
+  }
+
+  section p {
+    font-size: 1.1em; /* Reduce the font size for paragraphs in mobile view */
+  }
+
+  section ul li {
+    font-size: 1.1em; /* Reduce the font size for list items in mobile view */
+  }
+
+  section img.img14 {
+    width: 40%; /* Adjust the image size in mobile view */
+    margin-bottom: 1em;
+  }
+}
